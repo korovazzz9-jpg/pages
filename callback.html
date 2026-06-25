@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Authorization — 60SecFacts</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a12; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .box { text-align: center; max-width: 480px; padding: 0 24px; }
+  .logo-dot { width: 48px; height: 48px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, #ff4fc4, #7b5cff); margin: 0 auto 24px; }
+  h1 { font-size: 22px; color: #fff; margin-bottom: 12px; }
+  p { font-size: 15px; color: #888; margin-bottom: 24px; }
+  .code-box { background: #111122; border: 1px solid #2a2a3a; border-radius: 8px; padding: 16px; font-family: monospace; font-size: 13px; color: #c084fc; word-break: break-all; text-align: left; }
+  .label { font-size: 12px; color: #555; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="logo-dot"></div>
+  <h1>Authorization successful</h1>
+  <p>Copy the full URL from your browser address bar and paste it into the terminal.</p>
+  <div class="label">Current page URL:</div>
+  <div class="code-box" id="url"></div>
+</div>
+<script>
+  document.getElementById("url").textContent = window.location.href;
+</script>
+</body>
+</html>
